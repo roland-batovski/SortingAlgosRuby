@@ -1,7 +1,7 @@
 #modificat
 class Array
 
-	# Set the maximum Fixnum number
+	# Set the maximum Fixnum value
 	FIXNUM_MAX = (2**(0.size * 8 -2) -1);
 
 	def mergesort
