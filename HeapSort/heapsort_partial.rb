@@ -23,4 +23,15 @@ class Array
 			heapify(min, end_)
 		end
 	end
+
+	def heapsort!
+		#in pseudo-code, heapify olny called once, so inline it here
+		((length - 1)/ 2 ).downto(0) {|start| heapify(start, length - 1)}
+		# "end" is a ruby keyword
+		(length - 1).downto(1) do |end_|
+			self[end_], self[0] = self[0], self[end_]
+			heapify(0, end_ - 1)
+		end
+		self
+	end
 end
