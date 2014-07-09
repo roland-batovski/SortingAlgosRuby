@@ -1,5 +1,6 @@
 #modificat
 #modificat sergiu
+#test branch
 class Array
 
 	# Set the maximum Fixnum value
