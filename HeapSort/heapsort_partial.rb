@@ -3,7 +3,7 @@
 class Array
 	def heapsort
 		self.dup.heapsort #creates a copy in order to not alter the object used
-  end
+	end
 
 	# HEAPIFY function
 	def heapify(start, end_)
@@ -23,3 +23,4 @@ class Array
 			heapify(min, end_)
 		end
 	end
+end
