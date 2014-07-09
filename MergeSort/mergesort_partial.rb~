@@ -40,6 +40,5 @@ class Array
 			merge_sort(q,r)
 			merge(l,q,r)
 		end
-		self
 	end			
 end
