@@ -1,3 +1,4 @@
+#modificat
 class Array
 
 	# Set the maximum Fixnum number
@@ -5,8 +6,8 @@ class Array
 
 	def mergesort
 		self.dup.merge_sort(0,self.length)
-	end	
-	
+	end
+
 	#MERGE SORT function
 	def merge_sort(l,r)
 		if l+1<r
@@ -16,7 +17,7 @@ class Array
 			merge(l,q,r)
 		end
 		self
-	end		
+	end
 
 	#MERGE function
 	def merge(l,q,r)
@@ -24,7 +25,7 @@ class Array
 		left  = Array.new(n1+1);
 		right = Array.new(n2+1);
 
-		for i in 0..n1-1 
+		for i in 0..n1-1
 			left[i] = self[l+i];
 		end
 
