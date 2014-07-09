@@ -1,3 +1,9 @@
+# Main clas
+class Array
+	def heapsort
+		self.dup.heapsort #creates a copy in order to not alter the object used
+  end
+
 # HEAPIFY function
 def heapify(start, end_)
 	root = start
@@ -14,5 +20,5 @@ def heapify(start, end_)
 	if min != root
 		self[min], self[root] = self[root], self[min]
 		heapify(min, end_)
-	end	
+	end
 end
