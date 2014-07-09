@@ -1,10 +1,10 @@
 
 # Main clas
 class Array
+
 	def heapsort
 		self.dup.heapsort! #creates a copy in order to not alter the object used
 	end
-
 
 	def heapsort!
 		#MAKE-HEAP function
