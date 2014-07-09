@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Main clas
 class Array
 	def heapsort
@@ -8,17 +9,34 @@ class Array
 def heapify(start, end_)
 	root = start
 	min, left, right  = root, root*2, root*2+1
+=======
+class Array
+>>>>>>> 8d27a0a3122043f7b025f3886a6d896c4f04f4c2
 
-	if left <= end_ and self[left] > self[root]
-		min = left
+	# HEAPIFY function
+	def heapify(start, end_)
+		root = start
+		min, left, right  = root, root*2, root*2+1
+
+		if left <= end_ and self[left] > self[root]
+			min = left
+		end
+
+		if right <= end_ and self[right] > self[min]
+			min = right
+		end
+
+		if min != root
+			self[min], self[root] = self[root], self[min]
+			heapify(min, end_)
+		end	
 	end
 
-	if right <= end_ and self[right] > self[min]
-		min = right
-	end
-
+<<<<<<< HEAD
 	if min != root
 		self[min], self[root] = self[root], self[min]
 		heapify(min, end_)
 	end
+=======
+>>>>>>> 8d27a0a3122043f7b025f3886a6d896c4f04f4c2
 end
